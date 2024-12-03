@@ -42,9 +42,7 @@
         </router-link>
       </PopoverGroup>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <router-link to="#" class="text-sm/6 font-semibold text-gray-900">
-          Log in <span aria-hidden="true">&rarr;</span>
-        </router-link>
+        <LoginButtonVue />
       </div>
     </nav>
 
@@ -110,12 +108,7 @@
               </NuxtLink>
             </div>
             <div class="py-6">
-              <NuxtLink
-                href="#"
-                class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-              >
-                Log in
-              </NuxtLink>
+              <LoginButtonVue />
             </div>
           </div>
         </div>
@@ -138,6 +131,7 @@ import { ChevronDownIcon } from "@heroicons/vue/20/solid";
 import SubjectDropdown from "@/components/layouts/SubjectDropdown.vue";
 import products from "/mock/lessons.ts";
 import { useRouter } from "vue-router";
+import LoginButtonVue from "../ui/buttons/LoginButton.vue";
 
 const mobileMenuOpen = ref(false);
 

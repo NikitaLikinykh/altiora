@@ -1,0 +1,15 @@
+├── assets/            # Стили, изображения, файлы без обработки Webpack
+├── components/        # Повторно используемые Vue-компоненты
+├── composables/       # Общие функции/хуки (например, useAuth, useFetch)
+├── layouts/           # Макеты для страниц (header, footer, sidebar)
+├── middleware/        # Логика промежуточной обработки (auth, validate)
+├── pages/             # Страницы приложения (каждая соответствует маршруту)
+├── plugins/           # Регистрация сторонних библиотек (например, Axios, Pinia)
+├── public/            # Публичные файлы (доступны напрямую через браузер)
+├── server/            # Серверная часть (API-роуты, middleware)
+├── stores/            # Состояние приложения (Pinia, Vuex)
+├── utils/             # Утилиты и вспомогательные функции (formatDate, validateInput)
+├── app.config.ts      # Глобальная конфигурация Nuxt (мета-теги, стили)
+├── nuxt.config.ts     # Конфигурация проекта
+├── package.json       # Управление зависимостями
+├── tsconfig.json      # Конфигурация TypeScript
